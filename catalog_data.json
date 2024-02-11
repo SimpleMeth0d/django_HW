@@ -1,0 +1,26 @@
+[
+  {
+    "model": "catalog.category",
+    "pk": 1,
+    "fields": {
+      "title": "╨н╨╗╨╡╨║╤В╤А╨╛╨╜╨╕╨║╨░",
+      "description": "╨н╨╗╨╡╨║╤В╤А╨╛╨╜╨╕╨║╨░"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 2,
+    "fields": {
+      "title": "╨Ъ╨╛╤Б╨╝╨╡╤В╨╕╨║╨░",
+      "description": "╨Ъ╨╛╤Б╨╝╨╡╤В╨╕╨║╨░"
+    }
+  },
+  {
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+      "title": "╨Ю╨┤╨╡╨╢╨┤╨░",
+      "description": "╨Ю╨┤╨╡╨╢╨┤╨░"
+    }
+  }
+]
