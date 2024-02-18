@@ -5,6 +5,8 @@ from catalog.models import Product, Category
 class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
+        # Category.objects.all().delete()
+        # Product.objects.all().delete()
         list_categories = [
             {
                 "title": "Clothes",
@@ -23,7 +25,7 @@ class Command(BaseCommand):
                 "id": 1,
                 "purchase_price": 1000,
                 "date_creation": "2024-01-01",
-                "last_modified_date": "2023-01-01"
+                "last_modified_date": "2024-01-01"
             },
             {
                 "title": "Jeans",
@@ -32,7 +34,7 @@ class Command(BaseCommand):
                 "id": 1,
                 "purchase_price": 3000,
                 "date_creation": "2024-01-01",
-                "last_modified_date": "2023-01-01"
+                "last_modified_date": "2024-01-01"
             },
             {
                 "title": "Phone",
@@ -76,6 +78,7 @@ class Command(BaseCommand):
 
     @classmethod
     def truncate_table_restart_id(cls):
+        Category.objects.all().delete()
         Product.objects.all().delete()
         print('Данные удалены')
 
